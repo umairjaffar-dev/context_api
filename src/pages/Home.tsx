@@ -14,12 +14,6 @@ const Home = () => {
 
   const darkTheme = themeContext?.theme === "dark" && "bg-gray-900";
   return (
-    <div
-      className={twMerge(
-        "w-screen h-screen grid grid-rows-[auto_1fr] gap-2 bg-gray-100",
-        darkTheme
-      )}
-    >
       <div className="w-full h-16 px-10 border-b border-b-gray-500 flex justify-between items-center">
         <p className="text-md font-semibold text-violet-500">LoGo</p>
         <button
@@ -32,7 +26,6 @@ const Home = () => {
           mode
         </button>
       </div>
-    </div>
   );
 };
 
