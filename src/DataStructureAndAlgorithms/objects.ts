@@ -35,9 +35,11 @@ export const entries = Object.entries(person); // return an array of entries fro
  * In linear time complexity The execution time of the function is directly proportional to the input size. the run
  * time of function grows as the input grows and we mark it as O(n).
  *
+ * ___ Logarithmic time complexity - O(log(n))
+ * function execute by half of input value.
+ * 
  * ___ Quadratic time complexity - O(n^2)
  * ___ Cubic time complexity - O(n^3)
- * ___ Logarithmic time complexity - O(log(n))
  * ___ Exponential time complexity - O(2^n)
  * ___ Factorial time complexity - O(n!)
  * ___ Prime number time complexity - O(sqrt(n))

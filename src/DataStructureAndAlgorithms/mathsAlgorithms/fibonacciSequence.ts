@@ -43,7 +43,7 @@ export const isPrimeNumberResult3 = isPrimeNumber(4);
 //     n = n / 2;
 //   } 
 //   return true;
-// } // time complexity is O(log(n))
+// } // Logarithmic time complexity - O(log(n))
 function isPowerofTwoBitWise(n: number) {
   if (n < 1) return false;
   return (n & (n - 1)) === 0;
