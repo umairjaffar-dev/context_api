@@ -6,6 +6,7 @@ import {
   recursiveBinarySearch,
 } from "./DataStructureAndAlgorithms/searchAlgorithms";
 import { bubbleSortResult } from "./DataStructureAndAlgorithms/sortAlgorithms/bubbleSort";
+import { mergeSort } from "./DataStructureAndAlgorithms/sortAlgorithms/mergeSort";
 
 const App = () => {
   // // 1) JS Objects:
@@ -28,7 +29,8 @@ const App = () => {
   // console.log("index is", recursiveBinarySearch([-5, 2, 5, 20], 15)); // -1
 
   // 5) Sorting Algorithms
-  console.log("bubbleSortResult",bubbleSortResult);
+  // console.log("bubbleSortResult",bubbleSortResult);
+  console.log("mergeSortResult", mergeSort([-6, 20, 8, -2, 4]));
   return (
     <div>
       <Home />
