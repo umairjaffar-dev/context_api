@@ -1,4 +1,4 @@
-// Cartesian  Product:
+//--------------------------------------------------------- Cartesian  Product:
 function cartesianProduct() {
   let setA = [1, 2];
   let setB = [3, 4, 5];
@@ -14,7 +14,7 @@ function cartesianProduct() {
 
 cartesianProduct();
 
-// Climbing Staircase
+// --------------------------------------------------------- Climbing Staircase
 function climbingStairCase(n: number) {
   let noOfWays = [1, 2];
   for (let i = 2; i <= n; i++) {

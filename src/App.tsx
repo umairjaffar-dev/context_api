@@ -7,6 +7,7 @@ import {
 } from "./DataStructureAndAlgorithms/searchAlgorithms";
 import { bubbleSortResult } from "./DataStructureAndAlgorithms/sortAlgorithms/bubbleSort";
 import { mergeSort } from "./DataStructureAndAlgorithms/sortAlgorithms/mergeSort";
+import ArraysDataStructure from "./DataStructureAndAlgorithms/DataStructure/arraysDataStructure";
 
 const App = () => {
   // // 1) JS Objects:
@@ -30,11 +31,13 @@ const App = () => {
 
   // 5) Sorting Algorithms
   // console.log("bubbleSortResult",bubbleSortResult);
-  console.log("mergeSortResult", mergeSort([-6, 20, 8, -2, 4]));
+  // console.log("mergeSortResult", mergeSort([-6, 20, 8, -2, 4]));
   return (
     <div>
       <Home />
-      <div className="bg-gray-900 text-white h-full">Main Component</div>
+      <div className="bg-gray-900 text-white h-full">
+        <ArraysDataStructure />
+      </div>
     </div>
   );
 };
