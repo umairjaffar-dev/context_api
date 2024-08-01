@@ -98,11 +98,62 @@ const ArraysDataStructure = () => {
     );
     // console.log("flatMap", numbersFlatMap);
   }
+  // 10) The filter() method returns a new array with all elements that pass the test defined by the given function.
+  function arrayFilter() {
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    // filter the even number from array.
+    let evenNumbers = numbers.filter((num) => checkEven(num));
+    // console.log("even", evenNumbers);
+  }
+
+  // 11) The array find method return the value that pass the give test.
+  function arrayFind() {
+    let numbers = [1, 3, 4, 9, 8];
+    // find the even number from the numbers array.
+    const evenNumber = numbers.find((num) => checkEven(num));
+    // console.log("evenIs", evenNumber);
+  }
+
+  // 12) The findIndex method return the index of array that pass the give test.
+  function findIndexMethod() {
+    // defining an array
+    let days = [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thusday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ];
+    // find the index of friday.
+    const dayIndex = days.findIndex((day) => day === "Friday");
+    // console.log("dayIndex", dayIndex);
+  }
+
+  function includesMethod() {
+    let languages = ["JavaScript", "Java", "C"];
+  }
+
+  //
+  //
+  //
+  //
 
   // forOf loop is used to iterate all the elements in array.
   function forOfLoop() {
     for (const item of arr) {
       //   console.log({ item });
+    }
+  }
+
+  /** I want to check the even numbers from array. So make a function that return true if number is even
+   *  and false if number is not even. i.e */
+  function checkEven(num: number) {
+    if (num % 2 === 0) {
+      return true;
+    } else {
+      return false;
     }
   }
   useEffect(() => {
@@ -115,6 +166,9 @@ const ArraysDataStructure = () => {
     arrayFill();
     arrayFlat();
     arrayFlatMap();
+    arrayFilter();
+    arrayFind();
+    findIndexMethod()
   }, []);
 
   return (
